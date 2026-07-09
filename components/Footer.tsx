@@ -1,4 +1,5 @@
 // components/Footer.tsx
+import Link from "next/link";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -35,7 +36,6 @@ export default function Footer() {
           </a>
 
           {/* Mentions légales */}
-          {/* Mentions légales */}
           <div
             className="flex flex-col items-center md:items-end gap-1 text-center md:text-right"
             style={{
@@ -48,25 +48,10 @@ export default function Footer() {
             <span>© {year} Ameya Nature &amp; Guidance — Dalysé Larain</span>
             <span>SIRET 105 693 964 00014</span>
             <div className="flex items-center gap-4 mt-1">
-              <a
-                href="#"
-                className="hover:text-paper transition-colors duration-150"
-                style={{ color: "var(--dark-muted)" }}
-              >
-                Mentions légales
-              </a>
+              <Link href="/mentions-legales">Mentions légales</Link>
+
               <span aria-hidden="true">·</span>
-              <span>
-                Site réalisé par{" "}
-                <a
-                  href="https://solvantis.fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "var(--color-accent)" }}
-                >
-                  Solvantis
-                </a>
-              </span>
+              <span>Site réalisé par Solvantis</span>
             </div>
           </div>
         </div>

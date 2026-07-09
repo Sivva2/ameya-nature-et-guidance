@@ -9,6 +9,7 @@ export default function Contact() {
   const [state, setState] = useState<FormState>("idle");
   const [form, setForm] = useState({
     nom: "",
+    email: "",
     telephone: "",
     typeConsultation: "",
     dateNaissance: "",
@@ -39,6 +40,7 @@ export default function Contact() {
       setState("success");
       setForm({
         nom: "",
+        email: "",
         telephone: "",
         typeConsultation: "",
         dateNaissance: "",
@@ -219,6 +221,23 @@ export default function Contact() {
                       className="field__input"
                       placeholder="Votre nom"
                       value={form.nom}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="field">
+                    <label htmlFor="email" className="field__label">
+                      Email{" "}
+                      <span style={{ color: "var(--color-accent)" }}>*</span>
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      className="field__input"
+                      placeholder="votre@email.fr"
+                      value={form.email}
                       onChange={handleChange}
                       required
                     />
