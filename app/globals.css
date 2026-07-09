@@ -1,9 +1,9 @@
 /* ============================================================
    GLOBALS.CSS — Ameya Nature & Guidance — Tailwind v4
    ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
 
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
 
 /* ============================================================
    TOKENS — @theme expose les valeurs à Tailwind v4
@@ -16,6 +16,9 @@
   --color-accent: oklch(0.64 0.105 45);
   --color-accent-hover: oklch(0.58 0.105 45);
   --color-dark: #1a1714;
+  --color-border: color-mix(in srgb, #2c2823 22%, transparent);
+  --color-accent-bg: oklch(0.64 0.105 45 / 0.08);
+  --color-dark-muted: rgba(251, 248, 243, 0.6);
 
   /* Polices */
   --font-display: "Cinzel", Georgia, serif;
