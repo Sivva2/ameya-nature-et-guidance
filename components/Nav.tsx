@@ -33,7 +33,7 @@ export default function Nav() {
     >
       <nav className="container flex items-center justify-between py-4">
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-none">
+        <a href="#" className="flex flex-col leading-none shrink-0">
           <span
             className="text-[1.625rem] font-semibold tracking-wide"
             style={{ fontFamily: "var(--font-display)" }}
@@ -67,9 +67,11 @@ export default function Nav() {
         </ul>
 
         {/* CTA desktop */}
-        <a href="#contact" className="btn hidden md:inline-flex">
-          Me contacter
-        </a>
+        <div className="hidden md:block">
+          <a href="#contact" className="btn">
+            Me contacter
+          </a>
+        </div>
 
         {/* Burger mobile */}
         <button

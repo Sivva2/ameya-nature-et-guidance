@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="section relative pt-32 pb-0 text-center overflow-hidden">
+    <section className="section relative pt-32 md:pt-36 pb-0 text-center overflow-hidden">
       <div className="container flex flex-col items-center">
         {/* Eyebrow */}
-        <p className="eyebrow mb-6">
+        <p className="eyebrow mb-6 py-5">
           Voyance &amp; accompagnement bienveillant
         </p>
 
