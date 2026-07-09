@@ -91,7 +91,7 @@ export default function Services() {
         </div>
 
         {/* Grille 4 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[var(--gap)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-(--gap)">
           {services.map((s) => (
             <div key={s.id} className="card card--thin flex flex-col gap-4">
               {/* Icône */}
